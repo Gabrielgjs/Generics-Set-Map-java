@@ -2,7 +2,7 @@ package application;
 
 import java.util.Scanner;
 
-import services.PrintServiceString;
+import services.PrintService;
 
 public class Program {
 
@@ -10,7 +10,7 @@ public class Program {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		PrintServiceString ps = new PrintServiceString();
+		PrintService<String> ps = new PrintService<>();
 		
 		System.out.print("how many values: ");
 		int n  = scan.nextInt();
@@ -22,7 +22,8 @@ public class Program {
 		
 		ps.print();
 		System.out.println();
-		System.out.println("First: "+ ps.first());
+		String x = ps.first();
+		System.out.println("First: "+ x);
 		
 		scan.close();
 	}
