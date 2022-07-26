@@ -2,12 +2,14 @@ package application;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class ProgramSet {
 
 	public static void main(String[] args) {
-
-		Set<String> set = new HashSet<>();
+		
+		// TreeSet ordena os dados 
+		Set<String> set = new TreeSet<>();
 		set.add("TV");
 		set.add("Notebook");
 		set.add("Tablet");
