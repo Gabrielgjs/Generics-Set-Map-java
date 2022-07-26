@@ -12,6 +12,8 @@ public class ProgramSet {
 		set.add("TV");
 		set.add("Notebook");
 		set.add("Tablet");
+		// método que atende a um predicado;
+		set.removeIf(x -> x.charAt(0) == 'T');
 		// método verifica se o elemento está na coleção!
 		System.out.println(set.contains("Notebook"));
 		
